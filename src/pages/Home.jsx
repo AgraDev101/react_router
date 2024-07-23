@@ -1,38 +1,40 @@
 import Header from "../components/Header"
-import { useState, useEffect } from "react"
-import Tab1 from "../components/Tab1"
-import Tab2 from "../components/Tab2"
+import { useState } from "react"
+import Tab1 from "../components/Tab1";
+import Tab2 from "../components/Tab2";
 
+const Home = () => {
+    const [ tab, setTab ] = useState("Tab1")
 
-export const Home = () => {
+    // Short Circuit Evaluation
 
-    let [tab, setTab] = useState("tab1")
+    let a = 1
 
-    useEffect(() => {
-        let getData = async () => {
-            let res = await fetch("https://jsonplaceholder.typicode.com/posts")
-            let data = await res.json()
-            console.log(data)
-        }
-        getData()
-    }, [])
+    let b = 3
+
+    let c = 5
+
+    let result = ((a > b) && "abc") || (b < c) && "123" // false AND True => False
 
     return (
         <>
             <Header />
             <h1>Home Page</h1>
-            <div style={{
-                display: "flex",
-                justifyContent: "space-between",
-                maxWidth: "150px",
-                margin: "20px auto"
-            }}>
-                <button onClick={() => setTab("tab1")} type="button" class="btn btn-primary">Tab 1</button>
-                <button onClick={() => setTab("tab2")} type="button" class="btn btn-primary">Tab 2</button>
+            <div >
+                <button onClick={() => setTab("Tab1")} type="button" class="btn btn-primary">Tab 1</button>
+                <button onClick={() => setTab("Tab2")} type="button" class="btn btn-primary">Tab 2</button>
             </div>
             {
-                ((tab == "tab1") && <Tab1 />) || ((tab == "tab2") && <Tab2 />)
+                (tab == "Tab1") && (<Tab1 />) || (tab == "Tab2") && (<Tab2 />)
             }
+            {/* <p className="text-center">{number}</p>
+            <p className="text-center">{number2}</p>
+            <button onClick={incrementNumber}>Increase number</button>
+            <button onClick={incrementNumber2}>Increase number2</button> */}
+            {/* <Title />
+            <Paragraph /> */}
         </>
     )
 }
+
+export default Home
