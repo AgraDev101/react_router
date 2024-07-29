@@ -1,0 +1,104 @@
+{
+    "quiz": [
+        {
+            "question": "What does HTML stand for?",
+            "options": ["HyperText Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyperlinking Text Marking Language"],
+            "answer": "HyperText Markup Language"
+        },
+        {
+            "question": "Which of the following is a JavaScript framework?",
+            "options": ["Django", "React", "Laravel", "Ruby on Rails"],
+            "answer": "React"
+        },
+        {
+            "question": "What does CSS stand for?",
+            "options": ["Creative Style Sheets", "Cascading Style Sheets", "Computer Style Sheets", "Colorful Style Sheets"],
+            "answer": "Cascading Style Sheets"
+        },
+        {
+            "question": "Which HTML tag is used to define an internal style sheet?",
+            "options": ["<style>", "<css>", "<script>", "<link>"],
+            "answer": "<style>"
+        },
+        {
+            "question": "Which of the following is used to create responsive web designs?",
+            "options": ["CSS Grid", "Bootstrap", "Flexbox", "All of the above"],
+            "answer": "All of the above"
+        },
+        {
+            "question": "Which property is used to change the background color in CSS?",
+            "options": ["bgcolor", "background-color", "color", "background"],
+            "answer": "background-color"
+        },
+        {
+            "question": "What is the correct syntax to include a JavaScript file in an HTML document?",
+            "options": ["<script src='file.js'></script>", "<script href='file.js'></script>", "<script link='file.js'></script>", "<script ref='file.js'></script>"],
+            "answer": "<script src='file.js'></script>"
+        },
+        {
+            "question": "Which of the following is a CSS preprocessor?",
+            "options": ["Sass", "HTML", "JavaScript", "SQL"],
+            "answer": "Sass"
+        },
+        {
+            "question": "How do you create a function in JavaScript?",
+            "options": ["function:myFunction()", "function myFunction()", "function = myFunction()", "function => myFunction()"],
+            "answer": "function myFunction()"
+        },
+        {
+            "question": "Which HTML attribute is used to define inline styles?",
+            "options": ["style", "class", "font", "styles"],
+            "answer": "style"
+        },
+        {
+            "question": "Which CSS property controls the text size?",
+            "options": ["font-style", "text-size", "font-size", "text-style"],
+            "answer": "font-size"
+        },
+        {
+            "question": "What does DOM stand for?",
+            "options": ["Document Object Model", "Data Object Model", "Document Orientation Model", "Data Orientation Model"],
+            "answer": "Document Object Model"
+        },
+        {
+            "question": "Which HTML tag is used to define a hyperlink?",
+            "options": ["<a>", "<link>", "<href>", "<hyperlink>"],
+            "answer": "<a>"
+        },
+        {
+            "question": "Which of the following is a version control system?",
+            "options": ["Git", "Node.js", "NPM", "JQuery"],
+            "answer": "Git"
+        },
+        {
+            "question": "How can you make a list that lists the items with numbers?",
+            "options": ["<ul>", "<ol>", "<dl>", "<list>"],
+            "answer": "<ol>"
+        },
+        {
+            "question": "Which HTML element is used to specify a header for a document or section?",
+            "options": ["<header>", "<head>", "<section>", "<hgroup>"],
+            "answer": "<header>"
+        },
+        {
+            "question": "What is the purpose of the 'alt' attribute in HTML?",
+            "options": ["To specify an alternate text for an image", "To specify the alignment of an image", "To specify the source of an image", "To specify the size of an image"],
+            "answer": "To specify an alternate text for an image"
+        },
+        {
+            "question": "Which of the following is not a valid JavaScript variable name?",
+            "options": ["_name", "$name", "1name", "name1"],
+            "answer": "1name"
+        },
+        {
+            "question": "How do you write 'Hello World' in an alert box?",
+            "options": ["msgBox('Hello World');", "alertBox('Hello World');", "msg('Hello World');", "alert('Hello World');"],
+            "answer": "alert('Hello World');"
+        },
+        {
+            "question": "Which CSS property is used to control the layout?",
+            "options": ["display", "layout", "visibility", "position"],
+            "answer": "display"
+        }
+    ]
+}  

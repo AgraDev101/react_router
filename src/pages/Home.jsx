@@ -2,9 +2,14 @@ import Header from "../components/Header"
 import { useState } from "react"
 import Tab1 from "../components/Tab1";
 import Tab2 from "../components/Tab2";
+import { useSelector, useDispatch } from "react-redux";
+import { counterState } from "../components/counterSlice";
 
 const Home = () => {
     const [ tab, setTab ] = useState("Tab1")
+
+
+    const { number } = useSelector(counterState)
 
     // Short Circuit Evaluation
 
@@ -14,12 +19,16 @@ const Home = () => {
 
     let c = 5
 
-    let result = ((a > b) && "abc") || (b < c) && "123" // false AND True => False
+    let obj = {
+        a,
+        b,
+        c
+    }
 
     return (
         <>
-            <Header />
-            <h1>Home Page</h1>
+            <Header data={obj} />
+            <h1>{number}</h1>
             <div >
                 <button onClick={() => setTab("Tab1")} type="button" class="btn btn-primary">Tab 1</button>
                 <button onClick={() => setTab("Tab2")} type="button" class="btn btn-primary">Tab 2</button>

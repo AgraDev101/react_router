@@ -2,8 +2,11 @@ import Home from "../pages/Home"
 import Contact from "../pages/Contact"
 import { NavLink, useLocation } from "react-router-dom"
 import Products from "../pages/Products"
+import Counter from "../pages/Counter"
+import Tasks from "../pages/Tasks/Task"
+import Quiz from "../pages/Quiz/Quiz"
 
-const Header = () => {
+const Header = (props) => {
     const location = useLocation()
 
     let activeStyle = {
@@ -31,6 +34,15 @@ const Header = () => {
                     </li>
                     <li style={(location.pathname == "/products") ? activeStyle : null}>
                         <NavLink style={{ marginLeft: "20px", textDecoration: "none" }} to="/products" element={<Products />}>Products</NavLink>
+                    </li>
+                    <li style={(location.pathname == "/counter") ? activeStyle : null}>
+                        <NavLink style={{ marginLeft: "20px", textDecoration: "none" }} to="/counter" element={<Counter />}>Counter</NavLink>
+                    </li>
+                    <li style={(location.pathname == "/tasks") ? activeStyle : null}>
+                        <NavLink style={{ marginLeft: "20px", textDecoration: "none" }} to="/tasks" element={<Tasks />}>Tasks</NavLink>
+                    </li>
+                    <li style={(location.pathname == "/quiz") ? activeStyle : null}>
+                        <NavLink style={{ marginLeft: "20px", textDecoration: "none" }} to="/quiz" element={<Quiz />}>Quiz</NavLink>
                     </li>
                 </ul>
             </section>
