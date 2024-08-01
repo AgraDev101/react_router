@@ -17,6 +17,8 @@ let products = [
     }
 ]
 
+// linear search algo
+
 let searchElement = 22
 
 for (let i = 0; i < products.length; i++) {
@@ -24,6 +26,8 @@ for (let i = 0; i < products.length; i++) {
         console.log("found " + searchElement + " at position", i + 1)
     }
 }
+
+// bubble sort algo
 
 let temp
 
